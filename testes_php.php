@@ -2,6 +2,7 @@
 
 
 if($_SERVER['REQUEST_METHOD'] == 'POST'){
+  $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_SPECIAL_CHARS);
 $servername = "localhost";
 $username = "root";
 $password = "";
