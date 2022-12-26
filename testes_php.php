@@ -1,4 +1,7 @@
 <?php
+
+
+if($_SERVER['REQUEST_METHOD'] == 'POST'){
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -52,6 +55,6 @@ try {
 } catch(PDOException $e) {
   echo $sql . "<br>" . $e->getMessage();
 }
-
+}
 $conn = null;
 ?>
